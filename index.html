@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+   
     <title>My website</title>
+    <script src="script.js"></script> 
 </head>
 <body>
    
@@ -39,6 +41,19 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
                 <h2 class="hero_title">Hi, it's me JOY</h2>
                 <p class="hero_desc">I am a professional web developer </p>
+                
+                
+
+
+                  <div class="container">
+                    <form>
+                        <p>Enter  email address:</p> 
+                        <input id='email'>
+                        <button type='submit' id='validate'>Validate!</button>
+                    </form>
+                  </div>
+               
+                  
             </div>
             </div>
         </div>
@@ -92,7 +107,6 @@
                 <div class="col-lg-6">
 
                            
-                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
                     <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
                         <div id="google-maps-display" style="height:100%; width:100%;max-width:100%;">
                             <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Donholm+phase+5,+Nairobi,+Kenya&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
@@ -104,38 +118,45 @@
 
                 <div class="col-lg-6">
                     <!-- form fields -->
-                    <form>
-                        <input type="text" class="form-control form-control-lg" placeholder="Name">
-                        <input type="email" class="form-control mt-3" placeholder="Email">
-                        <input type="text" class="form-control mt-3" placeholder="Subject">
+                    
+                        <form name="myForm" action="" method="GET">
+
+                           <input type="text" class="form-control form-control-lg" placeholder="Name" name="inputbox" value="">
+                            <input type="email" class="form-control mt-3" placeholder="Email" name="inputbox" value="">
+                           <input type="text" class="form-control mt-3" placeholder="Subject" name="inputbox" value="">
                         <div class="mb-3 mt-3">
                             <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
                         </div>
-                    </form>
-                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
-                    
+                
+                         <input type="button" name="button" value="Contact me " onClick="testResults(this.form)">
+                   
+                       
+                        
+                      </form>
+                      
+                      
+
                 </div>
 
             </div>
         </div>
     </section>
-    
-
-
+   
     <footer id="footer">
         <div class="container-fluid">
             <!-- social media icons -->
-            <div class="social-icons mt-4">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+            <div class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                
+                
             </div>
         </div>
     </footer>
-
-         
+    
+   
 
 
     <script src="myscripts.js"></script>
